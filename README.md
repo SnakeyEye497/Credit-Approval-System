@@ -111,6 +111,13 @@ credit_approval/
 
 ---
 
+## ⚙️ Architecture
+![Architecture](./Architecture.png)
+
+
+---
+
+
 ## ⚙️ Technologies Used
 
 - **Django 5.1.1**: Web framework for backend logic and ORM.
