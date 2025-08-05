@@ -1,0 +1,11 @@
+Django>=4.2
+djangorestframework
+psycopg2-binary
+celery
+redis
+django-cors-headers
+python-decouple
+openpyxl
+gunicorn
+pandas
+whitenoise
