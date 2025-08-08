@@ -143,7 +143,7 @@ cd credit_approval/backend
 docker-compose up --build
 ```
 
-This will start 3 containers:
+This will start 4 containers:
 - `web`: Django backend server
 - `db`: PostgreSQL
 - `redis`: Redis for Celery
