@@ -28,3 +28,5 @@ from django.contrib import admin
 @admin.register(Customer)
 class CustomerAdmin(admin.ModelAdmin):
     list_display = ('customer_id', 'first_name', 'last_name', 'phone_number', 'monthly_salary')
+
+
