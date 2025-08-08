@@ -4,6 +4,11 @@ from .models import Loan
 from customers.models import Customer
 from datetime import datetime
 
+# This task ingests loan data from an Excel file and updates or creates Loan records in the database.
+# It uses the pandas library to read the Excel file and processes each row to either update an existing loan
+# or create a new one based on the loan ID.
+# The task is designed to handle exceptions gracefully, logging any errors encountered during the import process.
+
 @shared_task
 def ingest_loan_data(file_path):
     df = pd.read_excel(file_path)

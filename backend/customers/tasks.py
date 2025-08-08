@@ -2,6 +2,11 @@ import pandas as pd
 from celery import shared_task
 from .models import Customer
 
+# This task ingests customer data from an Excel file and updates or creates Customer records in the database.
+# It uses the pandas library to read the Excel file and processes each row to either update an existing customer
+# or create a new one based on the phone number.
+# The task is designed to handle exceptions gracefully, logging any errors encountered during the import process.
+
 @shared_task
 def ingest_customer_data(file_path):
     df = pd.read_excel(file_path)

@@ -2,6 +2,10 @@ from django.urls import path
 from . import views
 from .views import register_customer, check_eligibility
 
+# URL configuration for the loans app
+# This file defines the URL patterns for the loans app, mapping URLs to their corresponding views.
+# It includes endpoints for registering customers, checking eligibility, viewing loans, and creating loans. 
+
 urlpatterns = [
  
     path('register', register_customer),

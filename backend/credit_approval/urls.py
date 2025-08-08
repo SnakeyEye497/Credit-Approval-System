@@ -19,6 +19,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# API endpoints for loans
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('loans.urls')),

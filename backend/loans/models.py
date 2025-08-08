@@ -1,9 +1,10 @@
 from django.db import models
-
-# Create your models here.
-
-from django.db import models
 from customers.models import Customer
+
+# This model represents a loan in the credit approval system.
+# It includes fields for loan details such as loan ID, customer, loan amount, tenure,
+# interest rate, monthly installment, EMIs paid on time, start date, and end date.
+# The loan ID is the primary key and the customer field is a foreign key to the Customer model.
 
 class Loan(models.Model):
     loan_id = models.AutoField(primary_key=True)

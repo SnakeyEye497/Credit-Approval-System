@@ -3,6 +3,11 @@
 import django.db.models.deletion
 from django.db import migrations, models
 
+# This migration creates the initial Loan model with fields for loan details.
+# It includes fields for loan ID, loan amount, tenure, interest rate, monthly installment,
+# EMIs paid on time, start date, end date, and a foreign key relationship to the Customer model.
+# The loan ID is set as the primary key.
+# This migration is the first one for the loans app, establishing the basic structure for loan data storage.
 
 class Migration(migrations.Migration):
 

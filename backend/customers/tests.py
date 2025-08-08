@@ -5,6 +5,10 @@ from rest_framework.test import APIClient
 from rest_framework import status
 from customers.models import Customer
 
+
+# Test cases for the Customer model and API endpoints
+
+
 class CustomerTests(TestCase):
     def setUp(self):
         self.client = APIClient()

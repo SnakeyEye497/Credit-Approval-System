@@ -1,9 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
 
 
-# Do the same in backend/loans/admin.py for Loan model
+# Register the Loan model in the Django admin interface
 
 from .models import Loan
 @admin.register(Loan)

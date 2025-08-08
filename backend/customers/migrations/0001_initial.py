@@ -2,7 +2,12 @@
 
 from django.db import migrations, models
 
-
+# This migration creates the initial Customer model with fields for customer details.
+# It includes fields for customer ID, first name, last name, phone number, age, monthly salary,
+# approved limit, and current debt. The customer ID is set as the primary key and the phone number is unique.
+# The age field is optional (can be null or blank).
+# The approved limit is calculated as 36 times the monthly salary, and the current debt defaults to 0.
+# This migration is the first one for the customers app, establishing the basic structure for customer data storage.
 class Migration(migrations.Migration):
 
     initial = True
