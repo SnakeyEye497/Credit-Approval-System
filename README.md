@@ -147,7 +147,7 @@ This will start 3 containers:
 - `web`: Django backend server
 - `db`: PostgreSQL
 - `redis`: Redis for Celery
-
+- `celery`: Celery
 ### 🔹 3. Apply Migrations
 
 ```bash
